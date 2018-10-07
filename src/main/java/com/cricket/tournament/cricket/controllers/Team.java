@@ -1,6 +1,6 @@
-package controllers;
+package com.cricket.tournament.cricket.controllers;
 
-import Models.PlayersInfo;
+import com.cricket.tournament.cricket.Models.PlayersInfo;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
