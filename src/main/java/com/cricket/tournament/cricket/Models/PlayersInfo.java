@@ -1,4 +1,4 @@
-package Models;
+package com.cricket.tournament.cricket.Models;
 
 public class PlayersInfo {
 
