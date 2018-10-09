@@ -1,54 +1,16 @@
-package com.cricket.tournament.cricket.Entities;
+package com.cricket.tournament.cricket.Models;
 
-import lombok.Data;
+public class CreatePlayerInformation {
 
-import javax.persistence.*;
-import java.io.Serializable;
-
-@Data
-@Entity
-@Table(name= "player_info")
-public class PlayerInfo implements Serializable{
-
-    @Id
-    @Column(name="ID")
-    @GeneratedValue
-    private Integer id;
-
-    @Column(name="player_name")
     private String PlayerName;
-
-    @Column(name="date_of_birth")
     private String dateOfBirth;
-
-    @Column(name="origin_place")
     private String originPlace;
-
-    @Column(name="country")
     private String country;
-
-    @Column(name="leagues")
     private String leagues;
-
-    @Column(name="ranking")
     private int ranking;
-
-    @Column(name="jersey_number")
     private int jerseryNumber;
-
-    @Column(name="player_type")
     private String playerType;
-
-    @Column(name="best_score")
     private String bestScore;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getPlayerName() {
         return PlayerName;
