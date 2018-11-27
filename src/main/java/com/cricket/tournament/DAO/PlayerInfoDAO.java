@@ -1,6 +1,6 @@
-package com.cricket.tournament.cricket.DAO;
+package com.cricket.tournament.DAO;
 
-import com.cricket.tournament.cricket.Entities.PlayerInfo;
+import com.cricket.tournament.Entities.PlayerInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

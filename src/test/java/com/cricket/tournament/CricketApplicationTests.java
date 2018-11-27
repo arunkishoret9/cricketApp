@@ -1,4 +1,4 @@
-package com.cricket.tournament.cricket;
+package com.cricket.tournament;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
