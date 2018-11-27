@@ -1,16 +1,14 @@
-package com.cricket.tournament.cricket.service;
+package com.cricket.tournament.service;
 
-import com.cricket.tournament.cricket.DAO.PlayerInfoDAO;
-import com.cricket.tournament.cricket.Entities.PlayerInfo;
-import com.cricket.tournament.cricket.Models.CreatePlayerInformation;
-import com.cricket.tournament.cricket.Models.CreatePlayerInformationRespose;
-import com.cricket.tournament.cricket.Models.PlayersInformation;
-import com.cricket.tournament.cricket.Transformer.CreatePlayerInfoRequest;
-import com.cricket.tournament.cricket.Transformer.PlayerInfoResponse;
+import com.cricket.tournament.DAO.PlayerInfoDAO;
+import com.cricket.tournament.Entities.PlayerInfo;
+import com.cricket.tournament.Models.CreatePlayerInformation;
+import com.cricket.tournament.Models.CreatePlayerInformationRespose;
+import com.cricket.tournament.Transformer.CreatePlayerInfoRequest;
+import com.cricket.tournament.Transformer.PlayerInfoResponse;
+import com.cricket.tournament.Models.PlayersInformation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 public class PlayerInfoService {

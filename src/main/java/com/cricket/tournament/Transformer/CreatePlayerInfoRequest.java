@@ -1,7 +1,7 @@
-package com.cricket.tournament.cricket.Transformer;
+package com.cricket.tournament.Transformer;
 
-import com.cricket.tournament.cricket.Entities.PlayerInfo;
-import com.cricket.tournament.cricket.Models.CreatePlayerInformation;
+import com.cricket.tournament.Entities.PlayerInfo;
+import com.cricket.tournament.Models.CreatePlayerInformation;
 import org.springframework.stereotype.Component;
 
 @Component

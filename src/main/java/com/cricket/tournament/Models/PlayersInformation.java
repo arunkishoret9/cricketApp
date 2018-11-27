@@ -1,4 +1,4 @@
-package com.cricket.tournament.cricket.Models;
+package com.cricket.tournament.Models;
 
 import lombok.Data;
 
