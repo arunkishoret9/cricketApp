@@ -1,2 +1,2 @@
 # cricketApp
-Information about teams and playes
+Information about teams and players
