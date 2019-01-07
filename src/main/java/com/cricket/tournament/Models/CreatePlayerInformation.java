@@ -12,7 +12,8 @@ public class CreatePlayerInformation {
     private String playerType;
     private String bestScore;
 
-    public String getPlayerName() {
+    public String getPlayerName()
+    {
         return PlayerName;
     }
 

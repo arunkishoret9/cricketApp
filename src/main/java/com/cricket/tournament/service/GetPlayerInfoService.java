@@ -2,26 +2,20 @@ package com.cricket.tournament.service;
 
 import com.cricket.tournament.DAO.PlayerInfoDAO;
 import com.cricket.tournament.Entities.PlayerInfo;
-import com.cricket.tournament.Models.CreatePlayerInformation;
-import com.cricket.tournament.Models.CreatePlayerInformationRespose;
-import com.cricket.tournament.Transformer.CreatePlayerInfoRequest;
-import com.cricket.tournament.Transformer.PlayerInfoResponse;
+import com.cricket.tournament.Transformer.CreatePlayerInfoTransform;
+import com.cricket.tournament.Transformer.GetPlayerInfoTransform;
 import com.cricket.tournament.Models.PlayersInformation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PlayerInfoService {
+public class GetPlayerInfoService {
 
     @Autowired
     PlayerInfoDAO playerInfoDAO;
 
     @Autowired
-    CreatePlayerInfoRequest createPlayerInfoRequest;
-
-
-    @Autowired
-    PlayerInfoResponse playerInfoResponse;
+    GetPlayerInfoTransform playerInfoResponse;
 
     public PlayersInformation getPlayerDetails(int ranking) throws Exception {
 
@@ -33,14 +27,5 @@ public class PlayerInfoService {
         playersInformation = playerInfoResponse.transformResponseInfo(playerInfo);
         return playersInformation;
     }
-
-    public CreatePlayerInformationRespose createPlayerInfo(CreatePlayerInformation createPlayerInfo) {
-        CreatePlayerInformationRespose respose = null;
-        PlayerInfo playerInfo = createPlayerInfoRequest.transformData(createPlayerInfo);
-        playerInfoDAO.save(playerInfo);
-        respose.setSuccess(true);
-        return respose;
-    }
-
 }
 

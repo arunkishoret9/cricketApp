@@ -5,7 +5,7 @@ import com.cricket.tournament.Models.PlayersInformation;
 import org.springframework.stereotype.Component;
 
 @Component
-public class PlayerInfoResponse {
+public class GetPlayerInfoTransform {
 
     public PlayersInformation transformResponseInfo(PlayerInfo playerInfo){
 

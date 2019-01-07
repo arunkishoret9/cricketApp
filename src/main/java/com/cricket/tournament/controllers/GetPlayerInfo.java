@@ -1,7 +1,7 @@
 package com.cricket.tournament.controllers;
 
 import com.cricket.tournament.Models.PlayersInformation;
-import com.cricket.tournament.service.PlayerInfoService;
+import com.cricket.tournament.service.GetPlayerInfoService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class GetPlayerInfo {
 
     @Autowired
-    PlayerInfoService playerInfoService;
+    GetPlayerInfoService getPlayerInfoService;
 
     @ApiOperation("This API return the player information")
     @ApiResponse(code = 200, message = "Successfull")
@@ -26,7 +26,7 @@ public class GetPlayerInfo {
             @ApiParam(value="ranking", required = true) @RequestParam(value = "ranking", required = true) int ranking) throws Exception {
         PlayersInformation playersInformation = null;
         try {
-            playersInformation = playerInfoService.getPlayerDetails(ranking);
+            playersInformation = getPlayerInfoService.getPlayerDetails(ranking);
         } catch (Exception e) {
             throw new Exception("Exception occured");
         }
