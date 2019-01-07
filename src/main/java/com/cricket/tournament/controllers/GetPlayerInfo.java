@@ -14,14 +14,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Team {
+public class GetPlayerInfo {
 
     @Autowired
     PlayerInfoService playerInfoService;
 
     @ApiOperation("This API return the player information")
     @ApiResponse(code = 200, message = "Successfull")
-    @RequestMapping(value = "v1/playersInfo", produces = {"application/json"}, consumes = { "application/json" }, method = RequestMethod.GET)
+    @RequestMapping(value = "v1/getPlayersInfo", produces = {"application/json"}, consumes = { "application/json" }, method = RequestMethod.GET)
     public ResponseEntity<PlayersInformation> getPlayerDetails(
             @ApiParam(value="ranking", required = true) @RequestParam(value = "ranking", required = true) int ranking) throws Exception {
         PlayersInformation playersInformation = null;
